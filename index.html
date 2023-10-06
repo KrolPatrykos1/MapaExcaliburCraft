@@ -3,8 +3,8 @@
 <head>
     <style>
         body {
-            background-image: url('tlo.jpg'); /* Dodaj tło z pliku 'tlo.jpg' */
-            background-size: cover; /* Dostosuj wielkość tła do ekranu */
+            background-image: url('tlo.jpg');
+            background-size: cover;
             text-align: center;
             position: relative;
         }
@@ -31,7 +31,7 @@
 
         #info {
             color: black;
-            font-size: 36px; /* Wielkość czcionki dla napisu "Informacje" */
+            font-size: 36px;
         }
 
         h1 {
@@ -39,7 +39,6 @@
             color: black;
         }
 
-        /* Nowy styl dla kwadratów */
         .kwadrat-container {
             display: flex;
             justify-content: space-between;
@@ -47,36 +46,34 @@
         }
 
         .kwadrat {
-            width: 300px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
             background-color: #fff;
             border: 1px solid black;
         }
 
-        /* Nowy styl dla paska szarego */
         .pasek-szary {
             background-color: gray;
-            height: 10px; /* Wysokość paska szarego */
+            height: 10px;
             border: 0;
         }
     </style>
 </head>
 <body>
     <h1>ExcaliburCraft</h1>
-    <hr class="pasek-szary"> <!-- Pasek szary nad treścią -->
+    <hr class="pasek-szary">
     <div id="map-container">
         <iframe style="height: 500px; width: 100%; border: 0;" src="https://craftserve.pl/s/1108479/map?widget"></iframe>
     </div>
     <div id="info">
-        <hr class="pasek-szary"> <!-- Pasek szary nad "Informacje" -->
+        <hr class="pasek-szary">
         Informacje
         <div class="kwadrat-container">
             <div class="kwadrat"></div>
             <div class="kwadrat"></div>
             <div class="kwadrat"></div>
             <div class="kwadrat"></div>
-        </div>
-        <!-- Napis "Pokaż więcej" jako hiperłącze -->
+
         <a href="info.html" style="font-size: 24px;">Pokaż więcej</a>        
 </body>
 </html>
