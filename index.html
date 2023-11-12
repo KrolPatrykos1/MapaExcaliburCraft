@@ -1,83 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        body {
-            background-image: url('tlo.jpg');
-            background-size: cover;
-            text-align: center;
-            position: relative;
-        }
+  <meta charset="UTF-8">
+  <title>Strona Patryka Kamińskiego</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        body::before, body::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            background-color: black;
-        }
+    #header, #footer {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
 
-        body::before {
-            top: 30%;
-        }
+    #content {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
 
-        body::after {
-            top: 70%;
-        }
-
-        #map-container {
-            padding: 20px;
-        }
-
-        #info {
-            color: black;
-            font-size: 36px;
-        }
-
-        h1 {
-            font-size: 36px;
-            color: black;
-        }
-
-        .kwadrat-container {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px;
-        }
-
-        .kwadrat {
-            width: 200px;
-            height: 200px;
-            background-color: #fff;
-            border: 1px solid black;
-        }
-
-        .pasek-szary {
-            background-color: gray;
-            height: 10px;
-            border: 0;
-        }
-    </style>
+    .square {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      margin: 0 10px;
+    }
+  </style>
 </head>
 <body>
-    <h1>ExcaliburCraft</h1>
-    <hr class="pasek-szary">
-    <div id="map-container">
-        <iframe style="height: 700px; width: 100%; border: 0;" src="https://craftserve.pl/s/1108479/map?widget"></iframe>
-    </div>
-    <div id="info">
-        <hr class="pasek-szary">
-        Informacje
-        <div class="kwadrat-container">
-            <div class="kwadrat"></div>
-            <div class="kwadrat"></div>
-            <div class="kwadrat"></div>
-            <div class="kwadrat"></div>
-        <a href="https://excalibur24.pl/info.html" Pokaż Więcej </a>
-    
-        
-        
-        
-        </div>
+  <div id="header">
+    Patryk Kamiński
+  </div>
+
+  <div id="content">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+
+  <div id="footer">
+    Reklama
+  </div>
 </body>
 </html>
