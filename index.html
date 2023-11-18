@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
         body {
@@ -7,22 +8,6 @@
             background-size: cover;
             text-align: center;
             position: relative;
-        }
-
-        body::before, body::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            background-color: black;
-        }
-
-        body::before {
-            top: 30%;
-        }
-
-        body::after {
-            top: 70%;
         }
 
         #map-container {
@@ -57,8 +42,16 @@
             height: 10px;
             border: 0;
         }
+
+        /* Zmienione style dla linku "Pokaż Więcej" */
+        #info a {
+            font-size: 18px; /* Lekko mniejszy rozmiar czcionki */
+            color: #0077cc; /* Inny kolor */
+            text-decoration: none; /* Bez podkreślenia */
+        }
     </style>
 </head>
+
 <body>
     <h1>ExcaliburCraft</h1>
     <hr class="pasek-szary">
@@ -72,11 +65,9 @@
             <div class="kwadrat"></div>
             <div class="kwadrat"></div>
             <div class="kwadrat"></div>
-        <a href="https://excalibur24.pl/info.html" Pokaż Więcej </a>
-    
-        
-        
-        
         </div>
+        <a href="https://excalibur24.pl/info.html">Pokaż Więcej</a>
+    </div>
 </body>
+
 </html>
