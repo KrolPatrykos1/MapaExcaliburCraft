@@ -1,87 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Patryk Kamiński 1tp</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: black;
-      color: white;
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
+    <style>
+        body {
+            background-image: url('tlo.jpg');
+            background-size: cover;
+            text-align: center;
+            position: relative;
+        }
 
-    #header, #footer {
-      width: 100%;
-      background-color: #333;
-      text-align: center;
-      padding: 10px;
-    }
+        body::before, body::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: black;
+        }
 
-    #content {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 20px;
-    }
+        body::before {
+            top: 30%;
+        }
 
-    .kwadrat {
-      width: 600px;
-      height: 600px;
-      background-color: grey;
-      margin: 0 10px;
-      position: relative;
-    }
+        body::after {
+            top: 70%;
+        }
 
-    .info {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-    }
+        #map-container {
+            padding: 20px;
+        }
 
-    .info a {
-      color: white;
-    }
-  </style>
+        #info {
+            color: black;
+            font-size: 36px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: black;
+        }
+
+        .kwadrat-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .kwadrat {
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid black;
+        }
+
+        .pasek-szary {
+            background-color: gray;
+            height: 10px;
+            border: 0;
+        }
+    </style>
 </head>
 <body>
-  <div id="header">
-    Filmy Avengers!
-  </div>
-
-  <div id="content">
-    <div class="kwadrat" id="movie1">
-      <div class="info">
-        <h2>Avengers (2012)</h2>
-        <p>Grupa superbohaterów, na czele z Thorem, Iron Manem i Hulkiem, łączy siły, by obronić Ziemię przed inwazją kosmitów.</p>
-        <a href="https://www.filmweb.pl/film/Avengers-2012-371515" target="_blank">Pokaż więcej...</a>
-      </div>
+    <h1>ExcaliburCraft</h1>
+    <hr class="pasek-szary">
+    <div id="map-container">
+        <iframe style="height: 700px; width: 100%; border: 0;" src="https://craftserve.pl/s/1108479/map?widget"></iframe>
     </div>
-    <div class="kwadrat" id="movie2">
-      <div class="info">
-        <h2>Avengers: Czas Ultrona (2015)</h2>
-        <p>Światu zagraża robot Ultron, który pragnie przejąć władzę. Superbohaterowie postanawiają temu zapobiec, stawiając czoło groźnemu najeźdźcy.</p>
-        <a href="https://www.filmweb.pl/film/Avengers%3A+Czas+Ultrona-2015-637247" target="_blank">Pokaż więcej...</a>
-      </div>
-    </div>
-    <div class="kwadrat" id="movie3">
-      <div class="info">
-        <h2>Avengers: Wojna bez granic (2018)</h2>
-        <p>Potężny Thanos zbiera Kamienie Nieskończoności w celu narzucenia swojej woli wszystkim istnieniom we wszechświecie. Tylko drużyna superbohaterów znanych jako Avengers może go powstrzymać.</p>
-        <a href="https://www.filmweb.pl/film/Avengers%3A+Wojna+bez+granic-2018-693758" target="_blank">Pokaż więcej...</a>
-      </div>
-    </div>
-  </div>
-
-  <div id="footer">
-    Reklama
-  </div>
+    <div id="info">
+        <hr class="pasek-szary">
+        Informacje
+        <div class="kwadrat-container">
+            <div class="kwadrat"></div>
+            <div class="kwadrat"></div>
+            <div class="kwadrat"></div>
+            <div class="kwadrat"></div>
+        <a href="https://excalibur24.pl/info.html" Pokaż Więcej </a>
+    
+        
+        
+        
+        </div>
 </body>
 </html>
